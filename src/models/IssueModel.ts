@@ -18,6 +18,4 @@ const IssueSchema = new mongoose.Schema(
   },
 );
 
-const IssueModel = mongoose.model('Issue', IssueSchema);
-
-module.exports = IssueModel;
+export const IssueModel = mongoose.model('Issue', IssueSchema);

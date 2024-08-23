@@ -1,6 +1,6 @@
-const { Router } = require('express');
-const IssueController = require('./controllers/IssueController');
-const IssueValidator = require('./validators/IssueValidator');
+import { Router } from 'express';
+import IssueController from './controllers/IssueController';
+import IssueValidator from './validators/IssueValidator';
 
 const routes = Router();
 

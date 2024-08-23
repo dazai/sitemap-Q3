@@ -1,6 +1,6 @@
-const { z } = require('zod');
-const { validateRequest } = require('zod-express-middleware');
-const { default: mongoose } = require('mongoose');
+import { z } from 'zod';
+import { validateRequest } from 'zod-express-middleware';
+import mongoose from 'mongoose';
 
 const create = validateRequest({
   body: z.object({
@@ -50,7 +50,7 @@ const update = validateRequest({
   }),
 });
 
-module.exports = {
+export default {
   create,
   destroy,
   update,
