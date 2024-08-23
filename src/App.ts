@@ -1,5 +1,5 @@
 import express, { Express, Request, Response } from "express";
-const routes = require("./routes");
+import { routes } from "./routes";
 import cors from "cors";
 
 export const app: Express = express();

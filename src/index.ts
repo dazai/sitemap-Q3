@@ -1,5 +1,5 @@
 import { app } from "./App";
-const Loaders = require('./Loaders/index');
+import Loaders from './Loaders/index';
 
 Loaders.start();
 
